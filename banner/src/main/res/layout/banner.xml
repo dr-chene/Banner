@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/banner_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/banner_content"
+            tools:itemCount="3" />
+
+        <com.example.banner.Points
+            android:id="@+id/banner_point"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_margin="5dp"
+            app:layout_constraintDimensionRatio="3"
+            app:point_sum="3"
+            app:layout_constraintBottom_toBottomOf="@id/banner_rv"
+            app:layout_constraintEnd_toEndOf="@id/banner_rv"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

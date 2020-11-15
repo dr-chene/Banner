@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Points">
+        <attr name="point_sum" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="Banner">
+        <attr name="auto_loop" format="boolean"/>
+        <attr name="loop_duration" format="integer"/>
+    </declare-styleable>
+</resources>
